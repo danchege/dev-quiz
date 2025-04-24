@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quiz - Web Development Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dev Quiz</h1>
+            <p class="description">Test your web development knowledge from beginner to expert</p>
+        </header>
+
+        <main>
+            <!-- Level Selection Screen -->
+            <div class="level-selection active" id="levelSelection">
+                <h2>Choose Your Level</h2>
+                <div class="level-buttons">
+                    <button class="level-btn" data-level="beginner">Beginner</button>
+                    <button class="level-btn" data-level="intermediate">Intermediate</button>
+                    <button class="level-btn" data-level="advanced">Advanced</button>
+                    <button class="level-btn" data-level="expert">Expert</button>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div class="quiz-area" id="quizArea">
+                <div class="quiz-header">
+                    <span id="levelIndicator">Level: Beginner</span>
+                    <span id="questionCounter">Question 1/10</span>
+                    <span id="score">Score: 0</span>
+                </div>
+                
+                <div class="question-container">
+                    <h2 id="questionText">Loading question...</h2>
+                    <div id="optionsContainer" class="options-container"></div>
+                </div>
+                
+                <button id="nextBtn" class="next-btn">Next Question</button>
+            </div>
+
+            <!-- Results Screen -->
+            <div class="results" id="resultsArea">
+                <h2>Quiz Completed!</h2>
+                <div class="result-details">
+                    <p id="finalScore">Your score: 0/10</p>
+                    <p id="performanceComment">Keep practicing!</p>
+                </div>
+                <button id="restartBtn" class="restart-btn">Try Another Level</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 Created By Daniel Chege. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
