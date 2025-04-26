@@ -366,7 +366,7 @@ const quizData = {
         {
             question: "What is Content Security Policy (CSP)?",
             options: [
-                "A way to encrypt content",
+                "To encrypt content",
                 "A security feature that helps prevent XSS attacks",
                 "A content management system",
                 "A way to organize files"
@@ -528,9 +528,9 @@ const quizData = {
         {
             question: "What is the purpose of the JavaScript WeakSet?",
             options: [
-                "To create weak passwords",
+                "To create a weak password",
                 "To store object references that don't prevent garbage collection",
-                "To create small arrays",
+                "To create a small array",
                 "To store weak types"
             ],
             answer: 1
@@ -881,7 +881,7 @@ function loadQuestion() {
     
     const currentQuestion = quizQuestions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
-    questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${quizQuestions.length}`;
+    questionCounter.textContent = `${currentQuestionIndex + 1} of ${quizQuestions.length}`;
     
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
