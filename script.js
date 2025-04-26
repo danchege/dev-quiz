@@ -80,6 +80,36 @@ const quizData = {
             question: "Which operator is used to assign a value to a variable?",
             options: ["=", "==", "===", ":="],
             answer: 0
+        },
+        {
+            question: "What is the purpose of the HTML meta viewport tag?",
+            options: [
+                "To set the page background",
+                "To make websites responsive on mobile devices",
+                "To change the font size",
+                "To add metadata only"
+            ],
+            answer: 1
+        },
+        {
+            question: "Which CSS unit is relative to the font-size of the root element?",
+            options: ["px", "em", "rem", "vh"],
+            answer: 2
+        },
+        {
+            question: "What is the correct HTML for creating a hyperlink?",
+            options: [
+                "<link>example.com</link>",
+                "<a url='example.com'>link</a>",
+                "<a href='example.com'>link</a>",
+                "<hyperlink>example.com</hyperlink>"
+            ],
+            answer: 2
+        },
+        {
+            question: "How do you declare a constant in JavaScript?",
+            options: ["let", "var", "const", "constant"],
+            answer: 2
         }
     ],
     intermediate: [
@@ -190,6 +220,76 @@ const quizData = {
                 "display: grid",
                 "grid: true",
                 "container: grid"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the fetch API?",
+            options: [
+                "To fetch local files only",
+                "To make HTTP requests and handle responses",
+                "To fetch images only",
+                "To download files to user's computer"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of CSS media queries?",
+            options: [
+                "To play media files",
+                "To create responsive designs for different screen sizes",
+                "To query the database",
+                "To style video elements"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript map() method?",
+            options: [
+                "To create a new map object",
+                "To create a new array with results of calling a function for every array element",
+                "To find elements in an array",
+                "To sort array elements"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of CSS flexbox?",
+            options: [
+                "To create flexible responsive layout structure",
+                "To add animations",
+                "To style text elements",
+                "To create grid layouts"
+            ],
+            answer: 0
+        },
+        {
+            question: "What is JSON?",
+            options: [
+                "JavaScript Object Notation - a lightweight data format",
+                "JavaScript Online Network",
+                "JavaScript Object Network",
+                "Java Standard Object Notation"
+            ],
+            answer: 0
+        },
+        {
+            question: "What is the purpose of npm?",
+            options: [
+                "New Project Manager",
+                "Node Package Manager - for managing JavaScript packages",
+                "New Programming Method",
+                "Node Project Module"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the 'defer' attribute in script tags?",
+            options: [
+                "To prevent script loading",
+                "To defer script execution until after HTML parsing",
+                "To load script faster",
+                "To delete script after execution"
             ],
             answer: 1
         }
