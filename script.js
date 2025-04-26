@@ -40,6 +40,46 @@ const quizData = {
             question: "How do you make text bold in HTML?",
             options: ["<bold>", "<b>", "<strong>", "<em>"],
             answer: 2
+        },
+        {
+            question: "What is the correct HTML element for inserting a line break?",
+            options: ["<break>", "<lb>", "<br>", "<newline>"],
+            answer: 2
+        },
+        {
+            question: "Which HTML tag is used to create an unordered list?",
+            options: ["<ul>", "<ol>", "<list>", "<dl>"],
+            answer: 0
+        },
+        {
+            question: "What is the default display property value for a <div> element?",
+            options: ["inline", "block", "inline-block", "none"],
+            answer: 1
+        },
+        {
+            question: "How do you add a background color in CSS?",
+            options: ["bg-color:", "background-color:", "color-background:", "bgcolor:"],
+            answer: 1
+        },
+        {
+            question: "Which CSS property controls the text size?",
+            options: ["text-size", "font-size", "text-style", "font-style"],
+            answer: 1
+        },
+        {
+            question: "What is the correct way to declare a JavaScript variable?",
+            options: ["variable name;", "v name;", "let name;", "var: name;"],
+            answer: 2
+        },
+        {
+            question: "How do you write a comment in JavaScript?",
+            options: ["<!-- comment -->", "/* comment */", "// comment", "# comment"],
+            answer: 2
+        },
+        {
+            question: "Which operator is used to assign a value to a variable?",
+            options: ["=", "==", "===", ":="],
+            answer: 0
         }
     ],
     intermediate: [
@@ -82,6 +122,76 @@ const quizData = {
             question: "How do you center a block element horizontally in CSS?",
             options: ["margin: auto", "padding: center", "text-align: center", "align: middle"],
             answer: 0
+        },
+        {
+            question: "What is the purpose of the 'async' attribute in script tags?",
+            options: [
+                "Makes script load faster",
+                "Loads script asynchronously while HTML parsing continues",
+                "Executes script in reverse order",
+                "Prevents script from loading"
+            ],
+            answer: 1
+        },
+        {
+            question: "Which method is used to remove the last element from an array?",
+            options: ["pop()", "push()", "shift()", "unshift()"],
+            answer: 0
+        },
+        {
+            question: "What is the difference between let and var?",
+            options: [
+                "No difference",
+                "let has block scope, var has function scope",
+                "var is newer than let",
+                "let is only for numbers"
+            ],
+            answer: 1
+        },
+        {
+            question: "How do you declare a CSS variable?",
+            options: [
+                "@variable",
+                "$variable",
+                "--variable",
+                "#variable"
+            ],
+            answer: 2
+        },
+        {
+            question: "What is the purpose of the localStorage object?",
+            options: [
+                "To store data temporarily",
+                "To store data permanently in the browser",
+                "To store server data",
+                "To store cookies"
+            ],
+            answer: 1
+        },
+        {
+            question: "Which event occurs when a user clicks on an HTML element?",
+            options: ["onmouseclick", "onclick", "onpress", "clickevent"],
+            answer: 1
+        },
+        {
+            question: "What is the correct way to write a ternary operator?",
+            options: [
+                "condition ? true : false",
+                "if ? then : else",
+                "condition ? then : else",
+                "if(condition) ? true : false"
+            ],
+            answer: 0
+        },
+        {
+            question: "How do you make a CSS grid container?",
+            options: [
+                "display: grid-container",
+                "display: grid",
+                "grid: true",
+                "container: grid"
+            ],
+            answer: 1
         }
     ],
     advanced: [
@@ -141,11 +251,158 @@ const quizData = {
             answer: 2
         }
     ],
-    expert: Array.from({ length: 15 }, (_, i) => ({
-        question: `Expert question ${i + 1}?`,
-        options: ["Option A", "Option B", "Option C", "Option D"],
-        answer: 1
-    }))
+    expert: [
+        {
+            question: "What is the difference between microtasks and macrotasks in JavaScript's event loop?",
+            options: [
+                "Microtasks execute before macrotasks in each event loop cycle",
+                "Macrotasks execute before microtasks in each event loop cycle",
+                "There is no difference, they are the same",
+                "Microtasks only run in Node.js"
+            ],
+            answer: 0
+        },
+        {
+            question: "What is a JavaScript Generator function and how is it declared?",
+            options: [
+                "A function that generates random numbers, declared with gen keyword",
+                "A function that can be paused and resumed, declared with function*",
+                "A function that creates other functions, declared with create keyword",
+                "A function that only generates arrays, declared with array keyword"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the WeakMap object in JavaScript?",
+            options: [
+                "To create a map with weak encryption",
+                "To store key-value pairs where keys must be objects and are weakly referenced",
+                "To create a map that automatically deletes old entries",
+                "To store only primitive values as keys"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between Object.seal() and Object.freeze()?",
+            options: [
+                "They are identical in functionality",
+                "Seal prevents adding/deleting properties, freeze also prevents modifying existing properties",
+                "Freeze prevents adding/deleting properties, seal also prevents modifying existing properties",
+                "Seal only works on arrays, freeze works on all objects"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the Symbol.iterator in JavaScript?",
+            options: [
+                "To create unique object properties",
+                "To define how an object should be converted to a primitive",
+                "To specify the default iterator for an object",
+                "To create private object methods"
+            ],
+            answer: 2
+        },
+        {
+            question: "What is the Temporal Dead Zone (TDZ) in JavaScript?",
+            options: [
+                "A period where garbage collection occurs",
+                "The time between variable declaration and initialization where let/const cannot be accessed",
+                "A zone where async code is executed",
+                "A special scope for setTimeout functions"
+            ],
+            answer: 1
+        },
+        {
+            question: "How does the JavaScript engine optimize tail-recursive functions?",
+            options: [
+                "By converting them to loops automatically",
+                "By caching their results",
+                "By eliminating the need for additional stack frames in proper tail calls",
+                "By running them in parallel"
+            ],
+            answer: 2
+        },
+        {
+            question: "What is the purpose of the Proxy object in JavaScript?",
+            options: [
+                "To create a secure connection to a server",
+                "To define custom behavior for fundamental operations like property lookup and assignment",
+                "To proxy network requests through a different server",
+                "To cache function results"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between Observable and Promise in async programming?",
+            options: [
+                "Observables can emit multiple values over time, Promises resolve once",
+                "Promises can emit multiple values, Observables resolve once",
+                "They are identical in functionality",
+                "Observables are synchronous, Promises are asynchronous"
+            ],
+            answer: 0
+        },
+        {
+            question: "What is the purpose of the globalThis property in JavaScript?",
+            options: [
+                "To access only global variables",
+                "To provide a standard way to access the global object across environments",
+                "To create global variables",
+                "To prevent access to global scope"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between Shadow DOM and Virtual DOM?",
+            options: [
+                "They are the same thing",
+                "Shadow DOM encapsulates DOM trees, Virtual DOM optimizes rendering",
+                "Virtual DOM is for web components, Shadow DOM is for React",
+                "Shadow DOM is deprecated, Virtual DOM is modern"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the queueMicrotask() function?",
+            options: [
+                "To schedule a task for the next event loop iteration",
+                "To queue a task to be executed in the microtask queue",
+                "To create a new worker thread",
+                "To optimize async operations"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between Object.create(null) and {}?",
+            options: [
+                "They are identical",
+                "Object.create(null) creates an object with no prototype chain",
+                "Object.create(null) is faster",
+                "{} creates an object with no prototype chain"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the private class fields (#) syntax in JavaScript?",
+            options: [
+                "To make properties read-only",
+                "To create truly private class members that cannot be accessed from outside",
+                "To optimize property access",
+                "To mark deprecated features"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between WebAssembly and JavaScript?",
+            options: [
+                "They are the same thing",
+                "WebAssembly is a low-level binary format designed to run at near-native speed",
+                "JavaScript is newer than WebAssembly",
+                "WebAssembly is only for web games"
+            ],
+            answer: 1
+        }
+    ]
 };
 
 
