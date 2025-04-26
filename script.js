@@ -110,6 +110,36 @@ const quizData = {
             question: "How do you declare a constant in JavaScript?",
             options: ["let", "var", "const", "constant"],
             answer: 2
+        },
+        {
+            question: "What is the purpose of semantic HTML tags?",
+            options: [
+                "To make the code look better",
+                "To improve accessibility and SEO",
+                "To add styling",
+                "To make text bold"
+            ],
+            answer: 1
+        },
+        {
+            question: "Which HTML tag is used for navigation?",
+            options: ["<navigation>", "<nav>", "<menu>", "<navbar>"],
+            answer: 1
+        },
+        {
+            question: "What attribute is used to provide text alternatives for images?",
+            options: ["title", "description", "alt", "text"],
+            answer: 2
+        },
+        {
+            question: "What does the 'aria-label' attribute do?",
+            options: [
+                "Adds a visible label",
+                "Provides a label for screen readers",
+                "Changes text color",
+                "Adds animation"
+            ],
+            answer: 1
         }
     ],
     intermediate: [
@@ -274,7 +304,7 @@ const quizData = {
             answer: 0
         },
         {
-            question: "What is the purpose of npm?",
+            question: "What is npm?",
             options: [
                 "New Project Manager",
                 "Node Package Manager - for managing JavaScript packages",
@@ -292,6 +322,76 @@ const quizData = {
                 "To delete script after execution"
             ],
             answer: 1
+        },
+        {
+            question: "What is the purpose of lazy loading images?",
+            options: [
+                "To make images load faster",
+                "To reduce initial page load time by loading images only when needed",
+                "To make images smaller",
+                "To improve image quality"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is destructuring in JavaScript?",
+            options: [
+                "Breaking down code",
+                "Extracting values from objects or arrays into distinct variables",
+                "Removing unused code",
+                "Converting objects to arrays"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of async/await in JavaScript?",
+            options: [
+                "To make code run faster",
+                "To handle promises more elegantly and write asynchronous code that looks synchronous",
+                "To prevent code execution",
+                "To create loops"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is Cross-Origin Resource Sharing (CORS)?",
+            options: [
+                "A way to share files",
+                "A security feature that controls how web pages access resources from different domains",
+                "A type of encryption",
+                "A way to compress images"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is Content Security Policy (CSP)?",
+            options: [
+                "A way to encrypt content",
+                "A security feature that helps prevent XSS attacks",
+                "A content management system",
+                "A way to organize files"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of template literals in JavaScript?",
+            options: [
+                "To create templates",
+                "To write multiline strings and embed expressions using ${expression}",
+                "To style text",
+                "To create HTML templates only"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is browser caching?",
+            options: [
+                "Saving passwords in browser",
+                "Storing website resources locally to improve load times on subsequent visits",
+                "Clearing browser history",
+                "Blocking websites"
+            ],
+            answer: 1
         }
     ],
     advanced: [
@@ -306,49 +406,194 @@ const quizData = {
             answer: 3
         },
         {
-            question: "Which method is used to convert JSON data to a JavaScript object?",
-            options: ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.toObject()"],
-            answer: 0
-        },
-        {
-            question: "Which method is used to add a new element to the end of an array?",
-            options: ["push()", "pop()", "shift()", "unshift()"],
-            answer: 0
-        },
-        {
-            question: "What does the '===' operator do in JavaScript?",
-            options: ["Compares both value and type", "Assigns a value", "Checks only value", "Compares memory location"],
-            answer: 0
-        },
-        {
-            question: "How can you prevent a form from submitting in JavaScript?",
-            options: ["form.prevent()", "event.preventDefault()", "stopDefault()", "return false"],
+            question: "What is the difference between call, apply, and bind methods?",
+            options: [
+                "They are identical in functionality",
+                "call accepts args list, apply accepts array, bind returns new function",
+                "They only work with arrow functions",
+                "They are used for DOM manipulation"
+            ],
             answer: 1
         },
         {
-            question: "Which function is used to delay execution of a function?",
-            options: ["setDelay()", "setTimeout()", "pause()", "wait()"],
+            question: "What is event bubbling in JavaScript?",
+            options: [
+                "Creating multiple events",
+                "Event propagation from child to parent elements",
+                "Removing event listeners",
+                "Adding event listeners"
+            ],
             answer: 1
         },
         {
-            question: "What is the output of typeof NaN?",
-            options: ["NaN", "undefined", "number", "object"],
-            answer: 2
+            question: "What is the purpose of the requestAnimationFrame method?",
+            options: [
+                "To create animations only",
+                "To optimize animations by syncing with browser's refresh rate",
+                "To pause animations",
+                "To remove animations"
+            ],
+            answer: 1
         },
         {
-            question: "Which loop is guaranteed to run at least once?",
-            options: ["for", "while", "do-while", "foreach"],
-            answer: 2
+            question: "What is memoization in JavaScript?",
+            options: [
+                "Storing memory leaks",
+                "Caching function results for better performance",
+                "Converting functions to methods",
+                "Creating memory snapshots"
+            ],
+            answer: 1
         },
         {
-            question: "What does 'use strict' do in JavaScript?",
-            options: ["Enables newer features", "Adds extra security", "Enforces strict parsing", "Fixes syntax"],
-            answer: 2
+            question: "What is the purpose of Web Workers?",
+            options: [
+                "To manage website content",
+                "To run scripts in background threads",
+                "To optimize images",
+                "To handle HTTP requests"
+            ],
+            answer: 1
         },
         {
-            question: "How do you create a class in JavaScript?",
-            options: ["function MyClass()", "new class MyClass", "class MyClass {}", "MyClass.create()"],
-            answer: 2
+            question: "What is the Service Worker API used for?",
+            options: [
+                "To create web services",
+                "To enable offline functionality and intercept network requests",
+                "To work with web sockets",
+                "To manage server workers"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is tree shaking in JavaScript?",
+            options: [
+                "A DOM manipulation technique",
+                "Dead code elimination in modern JavaScript bundlers",
+                "A way to organize code",
+                "A testing methodology"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the MutationObserver API?",
+            options: [
+                "To track mouse movements",
+                "To watch for changes in the DOM tree",
+                "To observe network requests",
+                "To monitor JavaScript errors"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between shallow and deep copying in JavaScript?",
+            options: [
+                "They are the same thing",
+                "Shallow copy duplicates references, deep copy duplicates values",
+                "Deep copy is faster than shallow copy",
+                "Shallow copy is for arrays only"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript Intl API?",
+            options: [
+                "To create international websites",
+                "To handle language-sensitive string comparison, number formatting, and date/time formatting",
+                "To translate text automatically",
+                "To detect user's location"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between Promise.all() and Promise.race()?",
+            options: [
+                "They are the same",
+                "all() waits for all promises, race() resolves with the first settled promise",
+                "race() is faster than all()",
+                "all() is for arrays only"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is code splitting in modern JavaScript?",
+            options: [
+                "Splitting code into multiple files",
+                "Dynamically loading code chunks when needed to improve performance",
+                "Breaking down functions",
+                "Separating HTML and JavaScript"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript WeakSet?",
+            options: [
+                "To create weak passwords",
+                "To store object references that don't prevent garbage collection",
+                "To create small arrays",
+                "To store weak types"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript Symbol type?",
+            options: [
+                "To create special characters",
+                "To create unique and immutable identifiers",
+                "To encrypt data",
+                "To style text"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript Reflect API?",
+            options: [
+                "To create mirrors",
+                "To provide methods for interceptable JavaScript operations",
+                "To reflect light on websites",
+                "To copy objects"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript BigInt type?",
+            options: [
+                "To store large images",
+                "To represent integers with arbitrary precision",
+                "To create big arrays",
+                "To handle big data"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript AbortController?",
+            options: [
+                "To stop JavaScript execution",
+                "To cancel fetch requests and abort DOM operations",
+                "To prevent form submission",
+                "To handle errors"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the JavaScript ResizeObserver?",
+            options: [
+                "To resize images",
+                "To monitor changes to element's dimensions",
+                "To handle window resizing",
+                "To resize text"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of JavaScript decorators?",
+            options: [
+                "To style elements",
+                "To modify classes and class members using wrapper functions",
+                "To create UI components",
+                "To add comments to code"
+            ],
+            answer: 1
         }
     ],
     expert: [
@@ -501,6 +746,76 @@ const quizData = {
                 "WebAssembly is only for web games"
             ],
             answer: 1
+        },
+        {
+            question: "What is the Virtual DOM and how does it work?",
+            options: [
+                "It's the same as the regular DOM",
+                "A lightweight copy of the DOM that React uses to optimize rendering",
+                "A virtual server",
+                "A browser feature"
+            ],
+            answer: 1
+        },
+        {
+            question: "What are JavaScript Generators and Iterators?",
+            options: [
+                "Tools for generating random numbers",
+                "Functions that can pause execution and resume later, yielding multiple values",
+                "Database query tools",
+                "DOM manipulation tools"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the Proxy pattern in JavaScript?",
+            options: [
+                "To create network proxies",
+                "To intercept and customize operations like property lookup and assignment",
+                "To cache function results",
+                "To manage server connections"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the difference between AOT and JIT compilation?",
+            options: [
+                "They are the same thing",
+                "AOT compiles during build time, JIT compiles during runtime",
+                "AOT is faster than JIT",
+                "JIT is only for JavaScript"
+            ],
+            answer: 1
+        },
+        {
+            question: "What are Web Components?",
+            options: [
+                "Regular HTML elements",
+                "Reusable, encapsulated HTML elements with custom functionality",
+                "JavaScript functions",
+                "CSS frameworks"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the Shadow DOM?",
+            options: [
+                "A dark theme for websites",
+                "A browser feature that provides encapsulation for DOM elements",
+                "A virtual DOM implementation",
+                "A JavaScript library"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the purpose of the IntersectionObserver API?",
+            options: [
+                "To detect browser intersections",
+                "To efficiently detect elements entering or leaving the viewport",
+                "To observe DOM changes",
+                "To track user interactions"
+            ],
+            answer: 1
         }
     ]
 };
@@ -517,6 +832,7 @@ const optionsContainer = document.getElementById('optionsContainer');
 const questionCounter = document.getElementById('questionCounter');
 const scoreElement = document.getElementById('score');
 const nextBtn = document.getElementById('nextBtn');
+const backBtn = document.getElementById('backBtn');
 const finalScore = document.getElementById('finalScore');
 const performanceComment = document.getElementById('performanceComment');
 const restartBtn = document.getElementById('restartBtn');
@@ -663,8 +979,12 @@ levelButtons.forEach(button => {
 });
 
 nextBtn.addEventListener('click', nextQuestion);
-
 restartBtn.addEventListener('click', initQuiz);
+backBtn.addEventListener('click', () => {
+    if (confirm('Are you sure you want to go back? Your progress will be lost.')) {
+        initQuiz();
+    }
+});
 
 // Initialize the quiz when page loads
 window.addEventListener('DOMContentLoaded', initQuiz);
